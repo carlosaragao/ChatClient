@@ -1,0 +1,10 @@
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\ChatCliente.exe
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.csprojAssemblyReference.cache
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.frmCliente.resources
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.exe
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.pdb
