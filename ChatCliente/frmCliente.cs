@@ -23,8 +23,10 @@ namespace ChatCliente
         private IPAddress enderecoIP;
         private bool Conectado;
 
-        public frmCliente()
+        public frmCliente(string nome)
         {
+            // Recebe nome do usuário logado
+            NomeUsuario = nome;
             // Na saída da aplicação : desconectar
             Application.ApplicationExit += new EventHandler(OnApplicationExit);
             InitializeComponent();
@@ -54,9 +56,6 @@ namespace ChatCliente
 
             // Verifica se estamos conectados ou não
             Conectado = true;
-
-            // Prepara o formulário
-            NomeUsuario = txtUsuario.Text;
 
             //Desabilita e habilita os campos apropriados
             txtServidorIP.Enabled = false;
@@ -173,7 +172,7 @@ namespace ChatCliente
 
         private void frmCliente_Load(object sender, EventArgs e)
         {
-
+            txtUsuario.Text = NomeUsuario;
         }
     }
 }

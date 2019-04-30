@@ -16,7 +16,12 @@ namespace ChatCliente
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCliente());
+            Login formLogin = new Login();
+
+            formLogin.ShowDialog();
+
+            if (formLogin.logado)
+                Application.Run(new frmCliente(formLogin.nome));
         }
     }
 }
