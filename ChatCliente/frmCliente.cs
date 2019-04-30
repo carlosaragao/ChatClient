@@ -61,9 +61,13 @@ namespace ChatCliente
             //Desabilita e habilita os campos apropriados
             txtServidorIP.Enabled = false;
             txtUsuario.Enabled = false;
+            txtLog.Enabled = false;
             txtMensagem.Enabled = true;
             btnEnviar.Enabled = true;
-            btnConectar.Text = "Desconectar";
+            //btnConectar.Text = "Desconectar";
+            // Pega uma imagem no resource e depois alinha a imagem
+            btnConectar.Image = ChatCliente.Properties.Resources.cross16001;
+            btnConectar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
 
             // Envia o nome do usuário ao servidor
             stwEnviador = new StreamWriter(tcpServidor.GetStream());
@@ -145,7 +149,8 @@ namespace ChatCliente
             txtUsuario.Enabled = true;
             txtMensagem.Enabled = false;
             btnEnviar.Enabled = false;
-            btnConectar.Text = "Conectar";
+            //btnConectar.Text = "Conectar";
+            btnConectar.Image = null;
 
             // Fecha os objetos
             Conectado = false;
@@ -164,6 +169,11 @@ namespace ChatCliente
                 strReceptor.Close();
                 tcpServidor.Close();
             }
+        }
+
+        private void frmCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

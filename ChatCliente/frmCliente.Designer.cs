@@ -30,68 +30,66 @@
         {
             this.txtServidorIP = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.btnConectar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtLog = new System.Windows.Forms.TextBox();
             this.txtMensagem = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnConectar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtServidorIP
             // 
-            this.txtServidorIP.Location = new System.Drawing.Point(96, 27);
+            this.txtServidorIP.Location = new System.Drawing.Point(96, 12);
             this.txtServidorIP.Name = "txtServidorIP";
-            this.txtServidorIP.Size = new System.Drawing.Size(171, 20);
+            this.txtServidorIP.Size = new System.Drawing.Size(170, 20);
             this.txtServidorIP.TabIndex = 0;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(96, 69);
+            this.txtUsuario.Location = new System.Drawing.Point(96, 56);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(171, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(170, 20);
             this.txtUsuario.TabIndex = 1;
-            // 
-            // btnConectar
-            // 
-            this.btnConectar.Location = new System.Drawing.Point(274, 65);
-            this.btnConectar.Name = "btnConectar";
-            this.btnConectar.Size = new System.Drawing.Size(96, 23);
-            this.btnConectar.TabIndex = 2;
-            this.btnConectar.Text = "Conectar";
-            this.btnConectar.UseVisualStyleBackColor = true;
-            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 30);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(77, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Servidor IP";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 72);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(12, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Usuário";
             // 
             // txtLog
             // 
-            this.txtLog.Location = new System.Drawing.Point(12, 105);
+            this.txtLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLog.Location = new System.Drawing.Point(12, 82);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(358, 308);
+            this.txtLog.Size = new System.Drawing.Size(360, 308);
             this.txtLog.TabIndex = 5;
             // 
             // txtMensagem
             // 
-            this.txtMensagem.Location = new System.Drawing.Point(12, 435);
+            this.txtMensagem.Location = new System.Drawing.Point(11, 423);
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(255, 20);
             this.txtMensagem.TabIndex = 6;
@@ -99,19 +97,45 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(274, 432);
+            this.btnEnviar.BackgroundImage = global::ChatCliente.Properties.Resources.enviar32001W;
+            this.btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEnviar.CausesValidation = false;
+            this.btnEnviar.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEnviar.FlatAppearance.BorderSize = 0;
+            this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnviar.Location = new System.Drawing.Point(308, 400);
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(96, 23);
+            this.btnEnviar.Size = new System.Drawing.Size(64, 64);
             this.btnEnviar.TabIndex = 7;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.UseVisualStyleBackColor = false;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            // 
+            // btnConectar
+            // 
+            this.btnConectar.BackgroundImage = global::ChatCliente.Properties.Resources.conectar32001W;
+            this.btnConectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConectar.CausesValidation = false;
+            this.btnConectar.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
+            this.btnConectar.FlatAppearance.BorderSize = 0;
+            this.btnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConectar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnConectar.Location = new System.Drawing.Point(308, 12);
+            this.btnConectar.Name = "btnConectar";
+            this.btnConectar.Size = new System.Drawing.Size(64, 64);
+            this.btnConectar.TabIndex = 2;
+            this.btnConectar.UseVisualStyleBackColor = false;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 477);
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(384, 476);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.txtLog);
@@ -120,8 +144,13 @@
             this.Controls.Add(this.btnConectar);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtServidorIP);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(400, 515);
+            this.MinimumSize = new System.Drawing.Size(400, 515);
             this.Name = "frmCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chat Cliente";
+            this.Load += new System.EventHandler(this.frmCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
