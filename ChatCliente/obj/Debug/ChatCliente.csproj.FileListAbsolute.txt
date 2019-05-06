@@ -24,3 +24,18 @@ C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\Google.Protobuf.dll
 C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\BouncyCastle.Crypto.dll
 C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\MySql.Data.xml
 C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\bin\Debug\Google.Protobuf.dll
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\bin\Debug\MySql.Data.xml
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.csprojAssemblyReference.cache
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.frmCliente.resources
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.Login.resources
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.pdb

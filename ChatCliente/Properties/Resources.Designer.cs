@@ -83,9 +83,29 @@ namespace ChatCliente.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap entrar32001W {
+            get {
+                object obj = ResourceManager.GetObject("entrar32001W", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap enviar32001W {
             get {
                 object obj = ResourceManager.GetObject("enviar32001W", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sair32001W {
+            get {
+                object obj = ResourceManager.GetObject("sair32001W", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
