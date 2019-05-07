@@ -40,6 +40,7 @@
             // 
             // txtServidorIP
             // 
+            this.txtServidorIP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtServidorIP.Location = new System.Drawing.Point(96, 12);
             this.txtServidorIP.Name = "txtServidorIP";
             this.txtServidorIP.Size = new System.Drawing.Size(170, 20);
@@ -57,6 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(12, 12);
@@ -80,6 +82,7 @@
             // txtLog
             // 
             this.txtLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLog.Enabled = false;
             this.txtLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLog.Location = new System.Drawing.Point(12, 82);
             this.txtLog.Multiline = true;
@@ -90,7 +93,8 @@
             // 
             // txtMensagem
             // 
-            this.txtMensagem.Location = new System.Drawing.Point(11, 423);
+            this.txtMensagem.Location = new System.Drawing.Point(15, 423);
+            this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(255, 20);
             this.txtMensagem.TabIndex = 6;
@@ -98,13 +102,14 @@
             // 
             // btnEnviar
             // 
+            this.btnEnviar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnEnviar.BackgroundImage = global::ChatCliente.Properties.Resources.enviar32001W;
             this.btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnEnviar.CausesValidation = false;
             this.btnEnviar.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.btnEnviar.FlatAppearance.BorderSize = 0;
-            this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnviar.Location = new System.Drawing.Point(308, 400);
             this.btnEnviar.Name = "btnEnviar";
@@ -115,13 +120,14 @@
             // 
             // btnConectar
             // 
+            this.btnConectar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnConectar.BackgroundImage = global::ChatCliente.Properties.Resources.conectar32001W;
             this.btnConectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnConectar.CausesValidation = false;
             this.btnConectar.FlatAppearance.BorderColor = System.Drawing.SystemColors.HotTrack;
             this.btnConectar.FlatAppearance.BorderSize = 0;
-            this.btnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConectar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnConectar.Location = new System.Drawing.Point(308, 12);

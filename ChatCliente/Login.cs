@@ -87,5 +87,10 @@ namespace ChatCliente
             if (e.KeyCode == Keys.Enter)
                 Logar();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
