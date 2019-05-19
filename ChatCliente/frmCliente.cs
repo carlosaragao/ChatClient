@@ -174,5 +174,11 @@ namespace ChatCliente
         {
             txtUsuario.Text = NomeUsuario;
         }
+
+        private void btnIncidentes_Click(object sender, EventArgs e)
+        {
+            Incidentes formIncidentes = new Incidentes();
+            formIncidentes.ShowDialog();
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.txtMensagem = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnConectar = new System.Windows.Forms.Button();
+            this.btnIncidentes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtServidorIP
@@ -96,7 +97,7 @@
             this.txtMensagem.Location = new System.Drawing.Point(15, 423);
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(255, 20);
+            this.txtMensagem.Size = new System.Drawing.Size(181, 20);
             this.txtMensagem.TabIndex = 6;
             this.txtMensagem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMensagem_KeyPress);
             // 
@@ -137,12 +138,23 @@
             this.btnConectar.UseVisualStyleBackColor = false;
             this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
+            // btnIncidentes
+            // 
+            this.btnIncidentes.Location = new System.Drawing.Point(202, 421);
+            this.btnIncidentes.Name = "btnIncidentes";
+            this.btnIncidentes.Size = new System.Drawing.Size(100, 23);
+            this.btnIncidentes.TabIndex = 8;
+            this.btnIncidentes.Text = "Incidentes";
+            this.btnIncidentes.UseVisualStyleBackColor = true;
+            this.btnIncidentes.Click += new System.EventHandler(this.btnIncidentes_Click);
+            // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(384, 476);
+            this.Controls.Add(this.btnIncidentes);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.txtLog);
@@ -173,6 +185,7 @@
         private System.Windows.Forms.TextBox txtLog;
         private System.Windows.Forms.TextBox txtMensagem;
         private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnIncidentes;
     }
 }
 

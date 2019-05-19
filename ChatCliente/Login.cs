@@ -15,7 +15,7 @@ namespace ChatCliente
     {
 
         MySqlConnection Con = null;
-        private string strCon = "server=127.0.0.1;userid=root;database=aps";
+        private string strCon = "server=192.168.0.109;userid=ip;password=aps5semestre2019;database=aps";
         private string strSql = string.Empty;
         public bool logado = false;
         public string nome = "";
@@ -38,7 +38,7 @@ namespace ChatCliente
                 usuario = txtUsuario.Text;
                 senha = txtSenha.Text;
 
-                strSql = "SELECT COUNT(ID) FROM Usuario WHERE Usuario = @Usuario AND Senha = @Senha";
+                strSql = "SELECT COUNT(ID) FROM usuario WHERE usuario = @Usuario AND senha = @Senha";
 
                 MySqlCommand cmd = new MySqlCommand(strSql, Con);
 
@@ -58,7 +58,7 @@ namespace ChatCliente
                 }
                 else
                 {
-                    MessageBox.Show("O usuário não se encontra cadastrado no sistema!");
+                    MessageBox.Show("Login ou senha incorretos!");
                     logado = false;
                 }
             }
@@ -74,6 +74,8 @@ namespace ChatCliente
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            //frmCliente frm = new frmCliente("carlos");
+            //frm.ShowDialog();
             Logar();
         }
 

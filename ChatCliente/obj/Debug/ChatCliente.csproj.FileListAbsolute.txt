@@ -17,7 +17,6 @@ E:\Vongola\UNIP\4_SEMESTRE\APS\OFICIAL\ChatClient-master\ChatCliente\obj\Debug\C
 E:\Vongola\UNIP\4_SEMESTRE\APS\OFICIAL\ChatClient-master\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
 E:\Vongola\UNIP\4_SEMESTRE\APS\OFICIAL\ChatClient-master\ChatCliente\obj\Debug\ChatCliente.exe
 E:\Vongola\UNIP\4_SEMESTRE\APS\OFICIAL\ChatClient-master\ChatCliente\obj\Debug\ChatCliente.pdb
-C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.csprojAssemblyReference.cache
 C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.Login.resources
 C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\MySql.Data.dll
 C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\bin\Debug\Google.Protobuf.dll
@@ -39,3 +38,5 @@ C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.
 C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
 C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.exe
 C:\Users\DarkElon\Desktop\APS_CHAT\ChatClient\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.Incidentes.resources
+C:\_Dev\Berkeley Sockets\ChatCliente\ChatCliente\obj\Debug\ChatCliente.csprojAssemblyReference.cache
