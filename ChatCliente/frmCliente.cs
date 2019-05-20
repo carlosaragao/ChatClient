@@ -177,7 +177,7 @@ namespace ChatCliente
 
         private void btnIncidentes_Click(object sender, EventArgs e)
         {
-            Incidentes formIncidentes = new Incidentes();
+            Incidentes formIncidentes = new Incidentes(this.NomeUsuario);
             formIncidentes.ShowDialog();
         }
     }

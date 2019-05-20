@@ -46,17 +46,20 @@ namespace ChatCliente.Model
 
         // Método para salvar os dados do form
 
-        public void salvar(Incidente incidente)
+        public void salvar(Incidente incidente, string usuario)
         {
             try
             {
                 AbrirConexao();
 
-                this.strSQL = "INSERT INTO incidente (descricao, usuario_id, data_incidente, solucao) values (@descricao, 1, @data, @solucao)";
+                int idUsuario = this.retornaUsuario(usuario);
+
+                this.strSQL = "INSERT INTO incidente (descricao, usuario_id, data_incidente, solucao) values (@descricao, @IdUser, @data, @solucao)";
 
                 comando = new MySqlCommand(this.strSQL, conexao);
 
                 comando.Parameters.Add("@descricao", MySqlDbType.VarChar).Value = incidente.descricao;
+                comando.Parameters.AddWithValue("@IdUser", idUsuario);
                 comando.Parameters.Add("@data", MySqlDbType.Date).Value = incidente.dataIncidente;
                 comando.Parameters.Add("@solucao", MySqlDbType.VarChar).Value = incidente.solucao;
 
@@ -74,17 +77,20 @@ namespace ChatCliente.Model
 
         // Método para editar os dados
 
-        public void editar(Incidente incidente)
+        public void editar(Incidente incidente, string usuario)
         {
             try
             {
                 AbrirConexao();
 
-                this.strSQL = "UPDATE incidente SET descricao = @descricao, usuario_id = 1, data_incidente = @data, solucao = @solucao WHERE id = @id";
+                int idUsuario = this.retornaUsuario(usuario);
+
+                this.strSQL = "UPDATE incidente SET descricao = @descricao, usuario_id = @IdUser, data_incidente = @data, solucao = @solucao WHERE id = @id";
 
                 comando = new MySqlCommand(this.strSQL, conexao);
 
                 comando.Parameters.Add("@id", MySqlDbType.Int32).Value = incidente.id;
+                comando.Parameters.AddWithValue("@IdUser", idUsuario);
                 comando.Parameters.Add("@descricao", MySqlDbType.VarChar).Value = incidente.descricao;
                 comando.Parameters.Add("@data", MySqlDbType.Date).Value = incidente.dataIncidente;
                 comando.Parameters.Add("@solucao", MySqlDbType.VarChar).Value = incidente.solucao;
@@ -125,6 +131,19 @@ namespace ChatCliente.Model
             {
                 fecharConexao();
             }
+        }
+
+        public int retornaUsuario(string usuario)
+        {
+            string strUser = $"SELECT id FROM usuario WHERE usuario = '{usuario}'";
+
+            MySqlCommand cmdUser = new MySqlCommand(strUser, conexao);
+            MySqlDataAdapter Da = new MySqlDataAdapter();
+            Da.SelectCommand = cmdUser;
+            DataTable Dt = new DataTable();
+            Da.Fill(Dt);
+
+            return (int)Dt.Rows[0]["id"];
         }
     }
 }

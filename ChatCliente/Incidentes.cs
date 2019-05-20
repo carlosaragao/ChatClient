@@ -15,10 +15,12 @@ namespace ChatCliente
     {
         IncidenteDAO incidenteDAO = new IncidenteDAO();
         Incidente incidente = null;
+        public string Usuario;
 
-        public Incidentes()
+        public Incidentes(string usuario)
         {
             InitializeComponent();
+            this.Usuario = usuario;
         }
 
         public void exibir()
@@ -56,7 +58,7 @@ namespace ChatCliente
 
             try
             {
-                this.incidenteDAO.salvar(incidente);
+                this.incidenteDAO.salvar(incidente, this.Usuario);
                 MessageBox.Show("Incidente salvo com sucesso");
                 this.exibir();
             }
@@ -86,7 +88,7 @@ namespace ChatCliente
 
             try
             {
-                this.incidenteDAO.editar(incidente);
+                this.incidenteDAO.editar(incidente, this.Usuario);
                 MessageBox.Show("Incidente alterado com sucesso");
                 this.exibir();
             }
